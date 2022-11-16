@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Brandon Roman's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/broman-portfolio.css">
+</head>
+
+<!--BODY-->
+<body class="Background">
+    
+<!--Navbar-->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+<!--Breaks inserted to add space between navbar and the first heading-->
+    <br>
+    <br>
+
+<!--BACKGROUND VIDEO-->
+<div id="Home">
+    <video autoplay muted loop id="Streets_Video">
+        <source src="images/video/streets.mp4" type="video/mp4">
+        <!--Display message if video fails to run-->
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+
+<!--VIDEO TEXT-->
+<div class="Video_Text">
+    <h1 class="white-text">Brandon Roman's Portfolio</h1>
+    <strong>
+        <p class="center">
+            <q>The thing about limitations is that they are only true as long as you believe in them.
+                <br>So, instead of believing in your limitations, start believing in yourself.
+            </q>
+            <br> -Jay Shetty
+            <br>
+            <br> My name is Broman and this is my portfolio website. Follow along to get to know me a bit more.
+            <br> Hope you enjoy!
+        </p>
+    </strong>
+</div>
+
+<!--ABOUT-->
+<div class="Row" id="About">
+    <!--LEFT COLUMN-->
+    <div class="Column_2">
+        <img src="images/me.jpg" alt="Photo of me">
+    </div>
+    <!--RIGHT COLUMN-->
+    <div class="Column_1">
+        <h1>About Me</h1>
+        <p>
+            I'm a 26 year old Software Developer in training!
+            <br>
+            <br>When I'm not coding, I spend most of my time making creating music and playing games.
+            <br>
+            <br>I'm currently a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp.
+            <br>
+            <br>Need some assistance with your project? <a href="#Contact">Contact</a> me below!
+        </p>
+    </div>
+</div>
+
+<!--GITHUB-->
+<div class="Row" id="GitHub">
+    <!--LEFT COLUMN-->
+    <div class="Column_1">
+        <h1>GitHub</h1>
+        <p>
+            Feel free to view my coding projects through my GitHub profile here:
+            <br>
+            <p class="center"><a href="https://github.com/flipsun" target="_blank">Brandon Roman's GitHub</a></p>
+        </p>
+    </div>
+    <!--RIGHT COLUMN-->
+    <div class="Column_2">
+        <a href="https://github.com/flipsun" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+    </div>
+</div>
+
+<!--CONTACT SECTION-->
+<div class="Row" id="Contact">
+    <!--CONTACT IMAGE, LEFT COLUMN-->
+    <div class="Column_2 Column_tall">
+        <img src="images/banner.png" alt="Banner photo">
+    </div>
+    <!--CONTACT FORM-, RIGHT COLUMN-->
+    <div class="Column_1 Column_tall">
+        <h1>Contact</h1>
+        <!--FORM-->
+        <form action="https://formspree.io/f/mpznbjnn" method="POST">
+            <label>Name:</label>
+                <input type="text" placeholder="Please enter your name here">
+            <label>Email:</label>
+                <input type="text" id="Email" placeholder="Please enter your email here">
+            <label>Message:</label>
+                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+</div>
+
+<!--Footer section-->
+<footer>
+    <p>
+        <p class="center">&copy Brandon Roman., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+        <br>
+    </p>
+</footer>
+</body>
+</html>
