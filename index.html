@@ -14,14 +14,11 @@
 <!--Navbar-->
     <div class="Navbar">
         <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
         <a href="#About">About</a>
         <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
     </div>
-
-<!--Breaks inserted to add space between navbar and the first heading-->
-    <br>
-    <br>
 
 <!--BACKGROUND VIDEO-->
 <div id="Home">
@@ -48,21 +45,62 @@
     </strong>
 </div>
 
+<!--ADDED SLIDESHOW SECTION-->
+<div id="Slideshow">
+    <div id="Slideshow_Background"> 
+        <div id="Slideshow_Container">
+            <!-- SLIDE 1/4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/me.jpg" alt="Photo of me">
+                <div class="text">I'm here to work with you on your project!</div>
+            </div>
+            <!-- SLIDE 2/4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/languages.png" alt="HTML, CSS, and JS logos"> 
+                <div class="text">I'm currently training in the following:<br>HTML, CSS, JavaScript,</div>
+            </div>
+            <!-- SLIDE 3/4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                <div class="text">as well as the popular programming language Python!</div>
+            </div>
+            <!-- SLIDE 4/4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/contact.jpg" alt="Contact me!"> 
+                <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+            </div>
+
+            <!-- PREVIOUS + NEXT BUTTONS -->
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br> <!-- SPACE BETWEEN SLIDESHOW IMAGES AND DOTS -->
+
+        <!-- SLIDESHOW DOTS -->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+</div>
+
 <!--ABOUT-->
 <div class="Row" id="About">
     <!--LEFT COLUMN-->
     <div class="Column_2">
-        <img src="images/me.jpg" alt="Photo of me">
+        <img src="images/banner.png" alt="Socials Banner">
     </div>
     <!--RIGHT COLUMN-->
     <div class="Column_1">
         <h1>About Me</h1>
         <p>
-            I'm a 26 year old Software Developer in training!
+            <br>I'm 26 year old student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp.
             <br>
             <br>When I'm not coding, I spend most of my time making creating music and playing games.
-            <br>
-            <br>I'm currently a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp.
             <br>
             <br>Need some assistance with your project? <a href="#Contact">Contact</a> me below!
         </p>
@@ -87,25 +125,22 @@
 </div>
 
 <!--CONTACT SECTION-->
-<div class="Row" id="Contact">
-    <!--CONTACT IMAGE, LEFT COLUMN-->
-    <div class="Column_2 Column_tall">
-        <img src="images/banner.png" alt="Banner photo">
-    </div>
-    <!--CONTACT FORM-, RIGHT COLUMN-->
-    <div class="Column_1 Column_tall">
-        <h1>Contact</h1>
-        <!--FORM-->
-        <form action="https://formspree.io/f/mpznbjnn" method="POST">
-            <label>Name:</label>
-                <input type="text" placeholder="Please enter your name here">
-            <label>Email:</label>
-                <input type="text" id="Email" placeholder="Please enter your email here">
-            <label>Message:</label>
-                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                <input type="submit" value="SUBMIT">
-        </form>
-    </div>
+<div id="Contact">
+    <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+           <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/mpznbjnn" method="POST" class="form-container">
+                    <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+         </div>
 </div>
 
 <!--Footer section-->
@@ -115,5 +150,6 @@
         <br>
     </p>
 </footer>
+<script src="JS/portfolio.js"></script>
 </body>
 </html>
