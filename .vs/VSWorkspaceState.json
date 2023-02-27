@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\aos-master",
+    "\\aos-master\\dist",
+    "\\images",
+    "\\images\\video",
+    "\\js",
+    "\\stylesheet"
   ],
-  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
