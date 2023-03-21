@@ -53,3 +53,36 @@ document.addEventListener("click", function(event){
 //        delay: 0.2,
 //        duration: .1
 //    })
+
+let parent = document.querySelectorAll('.animate-text');
+for (let i = 0; i < parent.length; i++) {
+    parent[i].style.width = parent[i].children[0].clientWidth + "px";
+};
+
+let slider = tns({
+    container: ".my-slider",
+    "slideBy": "1",
+    "speed": 400,
+    "nav": false,
+    autoplay: true,
+    controls: false,
+    autoplayButtonOutput: false,
+    responsive: {
+        1600: {
+            items : 4,
+            gutter : 20
+        },
+        1024: {
+            items : 4,
+            gutter : 20
+        },
+        768: {
+            items : 4,
+            gutter : 20
+        },
+        480: {
+            items : 4
+        }
+
+    }
+})
