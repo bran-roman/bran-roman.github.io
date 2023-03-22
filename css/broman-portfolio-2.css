@@ -72,27 +72,52 @@
 /* 1. TEMPLATE BACKGROUNDS */
 /* 1.1. works IMG BACKGROUND */
 .item-works-01 {
-    background-image: url(../img/works/languages.png);
+    background-image: url(../img/works/html-css.png);
+    transition: transform .5s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+
 }
 
+    .item-works-01:hover {
+        transform: scale(1.1);
+        filter: none;
+        -webkit-filter: grayscale(0%);
+    }
+
 .item-works-02 {
-    background-image: url(../img/works/python3.png);
+    background-image: url(../img/works/javascript-logo.png);
+    transition: transform .5s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 .item-works-03 {
-    background-image: url(../img/works/azuresql.jpg);
+    background-image: url(../img/works/python3.png);
+    transition: transform .5s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 .item-works-04 {
     background-image: url(../img/works/csharp1.jpg);
+    transition: transform .5s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 .item-works-05 {
-    background-image: url(../img/works/5.jpg);
+    background-image: url(../img/works/sql.png);
+    transition: transform .5s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 .item-works-06 {
-    background-image: url(../img/works/6.jpg);
+    background-image: url(../img/works/github1.jpg);
+    transition: transform .5s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 .item-works-07 {
@@ -985,6 +1010,10 @@ h4.cd-timeline-date {
         }
 }
 
+i.ion-android-radio-button-on {
+    font-size: 10px;
+    margin-right: 5px;
+}
 
 /* 9. services */
 .panel-wrapper {
@@ -992,7 +1021,7 @@ h4.cd-timeline-date {
     background: none;
     width: 100%;
     height: calc(100% + 300px);
-    margin: -33px 0 -53px 0;
+    margin: 10px 0 -53px 0;
     z-index: 1;
 }
 
@@ -1728,10 +1757,10 @@ nav.navigation-menu a {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-.left-side .container-home {
+.left-side .container {
     width: 100%;
     height: auto;
-    padding: 25px 65px 0 45px;
+    padding: 25px 72px 0 55px;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -3281,11 +3310,34 @@ video {
 
 img#portrait {
     width: inherit;
+    margin-left: 8vw;
+    transition: transform .5s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
+
+    img#portrait:hover {
+        transform: scale(1.1);
+        filter: none;
+        -webkit-filter: grayscale(0%);
+    }
 
 img#pdx {
     height: 40vh;
+    
 }
+
+.image-works {
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.image-works:hover {
+
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
 
 @media only screen and (max-width: 880px) {
     .about-img-container.mobile,
@@ -4102,11 +4154,30 @@ h6.contact {
     visibility: hidden;
 }
 
+.owl-item-active {
+    width: 231px;
+    margin-right: 50px;
+}
+
 
 /* 42. Owl Carousel CUSTOM */
 .owl-carousel {
     cursor: grab;
+    margin: 0;
+
+
 }
+
+#owl-carousel-works {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 125px;
+    margin-top: 20px;
+}
+
+
 
 .owl-nav-custom-team,
 .owl-nav-custom-works,
@@ -4201,9 +4272,7 @@ h6.contact {
         cursor: default !important;
     }
 
-#owl-carousel-works {
-    margin: -25px 0 0 0;
-}
+
 
 
 /* 43. Lity CUSTOM */
