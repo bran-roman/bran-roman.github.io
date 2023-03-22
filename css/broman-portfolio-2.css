@@ -149,19 +149,19 @@
 
 /* 1.3. hero slider IMG BACKGROUND */
 .bg-img-1 {
-    background-image: url(../img/background/hero-bg-1.jpg);
+    background-image: url(../img/team/vegas2.jpg);
 }
 
 .bg-img-2 {
-    background-image: url(../img/background/hero-bg-2.jpg);
+    background-image: url(../img/team/la3.jpg);
 }
 
 .bg-img-3 {
-    background-image: url(../img/background/hero-bg-3.jpg);
+    background-image: url(../img/team/bay.jpg);
 }
 
 .bg-img-4 {
-    background-image: url(../img/background/hero-bg-4.jpg);
+    background-image: url(../img/team/pdx3.jpg);
 }
 
 
@@ -446,8 +446,8 @@ h1.home-page-title {
 
 
 h2.home-page-title-all {
-    animation: animated-text-animation-r 40s linear infinite;
-    -webkit-animation: animated-text-animation-r 40s linear infinite;
+/*    animation: animated-text-animation-r 40s linear infinite;
+    -webkit-animation: animated-text-animation-r 40s linear infinite;*/
     font-family: 'Oswald', sans-serif;
     font-size: 80px;
     line-height: 1;
@@ -3309,22 +3309,14 @@ video {
 }
 
 img#portrait {
-    width: inherit;
-    margin-left: 8vw;
-    transition: transform .5s;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+    width: 50vw;
+    height: 125vh;
 }
 
-    img#portrait:hover {
-        transform: scale(1.1);
-        filter: none;
-        -webkit-filter: grayscale(0%);
-    }
-
-img#pdx {
-    height: 40vh;
-    
+img#bay {
+/*    width: 100%;
+    zoom: 1.4;
+    margin-top: -20vh;*/
 }
 
 .image-works {
