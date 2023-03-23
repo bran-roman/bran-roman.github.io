@@ -93,14 +93,14 @@
 }
 
 .item-works-03 {
-    background-image: url(../img/works/python3.png);
+    background-image: url(../img/works/python2.png);
     transition: transform .5s;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
 
 .item-works-04 {
-    background-image: url(../img/works/csharp1.jpg);
+    background-image: url(../img/works/csharp2.jpg);
     transition: transform .5s;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -114,7 +114,7 @@
 }
 
 .item-works-06 {
-    background-image: url(../img/works/github1.jpg);
+    background-image: url(../img/works/github9.png);
     transition: transform .5s;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
