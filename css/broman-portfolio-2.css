@@ -71,6 +71,18 @@
 
 /* 1. TEMPLATE BACKGROUNDS */
 /* 1.1. works IMG BACKGROUND */
+
+.timeline-image img {
+    transition: transform .5s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.timeline-image img:hover {
+    transform: scale(1.1);
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
 .item-works-01 {
     background-image: url(../img/works/html-css.png);
     transition: transform .5s;
