@@ -98,7 +98,7 @@
     }
 
 .item-works-02 {
-    background-image: url(../img/works/javascript-logo.png);
+    background-image: url(../img/works/JavaScript-logo.png);
     transition: transform .5s;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
