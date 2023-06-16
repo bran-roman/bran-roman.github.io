@@ -4576,6 +4576,7 @@ h6.contact {
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         border-radius: 50%;
+        padding: 3px;
     }
 
     .swiper-slide-controls:hover {
@@ -4796,6 +4797,7 @@ h6.contact {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding: 3px;
 }
 
 
