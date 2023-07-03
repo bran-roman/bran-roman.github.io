@@ -2380,6 +2380,13 @@ a:hover.link-effect::after {
 .center-block {
     display: table-cell;
     vertical-align: middle;
+
+}
+
+.center-block a {
+    position: relative;
+    display: block;
+    height: 100%;
 }
 
 
