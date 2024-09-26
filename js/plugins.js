@@ -1,32 +1,3 @@
-﻿/*
-  [JS Index - plugins]
-  
-  ---
-  
-  Template Name: Runex - One Page Portfolio Template
-  Author:  ex-nihilo
-  Version: 1.2
-*/
-
-
-/*
-  1. jQuery v3.6.0
-  2. glsl-easings v1.0.0
-  3. pager v1.0.0
-  4. Lity v2.2.2
-  5. PhotoSwipe v4.1.1
-    5.1. PhotoSwipe Default UI v4.1.1
-	5.2. PhotoSwipe Init
-  6. jquery.mb.YTPlayer v3.1.4
-  7. Slick v1.6.0
-  8. Fullscreeneo v1.0.0
-  9. Typed.js v1.1.7
-  10. jQuery UI v1.12.1 
-  11. Owl Carousel v2.2.1
-  12. Swiper v4.4.0
-  13. Bootstrap v3.3.7
-*/
-
 
 // 1. jQuery v3.6.0
 /*! jQuery v3.6.0 | (c) OpenJS Foundation and other contributors | jquery.org/license */
