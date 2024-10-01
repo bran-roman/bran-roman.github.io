@@ -1,37 +1,22 @@
-/*
-  1. preloader
-  2. show elements
-    2.1. page loaded
-    2.2. page ready
-  3. slick slider
-  4. navigation
-  5. animate elements
-  6. YouTube player
-  7. typed text
-  8. owl carousel
-  9. swiper slider
-  10. form
-*/
-
 
 $(function() {
 	"use strict";
 	
 	
 	$(window).on("load", function() {
-		// 1. preloader
+		// PRELOADER
 		$("#preloader").fadeOut(600);
 		$(".preloader-bg").delay(400).fadeOut(600);
 		
-		// 2. show elements
-		// 2.1. page loaded
+		// SHOW ELEMENTS
+		// PAGE LOADED
 		setTimeout(function() {
 			$("body").addClass("page-loaded");
 		}, 400);
-		// 2.2. page ready
+		// PAGE READY
 		$("body").addClass("page-ready");
 		
-		// 3. slick slider
+		// SLICK SLIDER
 		$(".slider").slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -59,7 +44,7 @@ $(function() {
 		});
 	});
 	
-	// 4. navigation
+	// NAVIGATION
 	$(".page-scroll").on("click", function(e) {
 		var $anchor = $(this);
 		$("html, body").stop().animate({
@@ -76,7 +61,7 @@ $(function() {
 	});
 	
 	$(window).on("scroll", function() {
-		// 5. animate elements
+		// ANIMATED ELEMENTS
 		if ($(this).scrollTop() > 300) {
 			$(".to-top-arrow").addClass("show");
 			$(".round-menu").addClass("direction");
@@ -86,18 +71,11 @@ $(function() {
 		}
 	});
 	
-	// 6. YouTube player
+	// YOUTUBE PLAYER
 	$("#bgndVideo").YTPlayer();
 	
-	// 7. typed text
-	$(".typed-title").typed({
-		strings: ["Fully Responsive", "Photography Portfolio", "Made for KINGS"],
-		typeSpeed: 35,
-		backDelay: 4500,
-		loop: true
-	});
 	
-	// 8. owl carousel
+	// OWL CAROUSEL
 	$("#owl-carousel-team").owlCarousel({
 		loop: false,
 		center: false,
@@ -313,7 +291,7 @@ $(function() {
 		}
 	});
 	
-	// 9. swiper slider
+	// SWIPER SLIDER
     var swiper = new Swiper(".swiper-container-wrapper .swiper-container", {
         autoplay: {
             delay: 4000,
@@ -357,7 +335,7 @@ $(function() {
         return false;
     });
 	
-	// 10. form
+	// FORMS
 	$("form#form").on("submit", function() {
 		$("form#form .error").remove();
 		var s = !1;

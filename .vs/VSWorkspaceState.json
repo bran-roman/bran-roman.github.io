@@ -1,11 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\images",
+    "\\css",
     "\\img",
-    "\\img\\team",
+    "\\img\\background",
+    "\\img\\slider-imgs",
     "\\js",
-    "\\stylesheet"
+    "\\photoswipe",
+    "\\photoswipe\\default-skin"
   ],
+  "SelectedNode": "\\img",
   "PreviewInSolutionExplorer": false
 }
